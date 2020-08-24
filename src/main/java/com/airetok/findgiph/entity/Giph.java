@@ -6,9 +6,6 @@ public class Giph {
 	private String url;
 	private String rate;
 
-	
-	
-	
 	public Giph(String type, String title, String url, String rate) {
 		super();
 		this.type = type;
