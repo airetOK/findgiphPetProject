@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+<title>
+GIPH
+</title>
+<link th:href="@{home.css}" rel="stylesheet"/>
+</head>
+<body>
+<div class="topHr">
+<img class="logo" src="GIPHY Logo 300px.png" alt="logo"/>
+<a class="mostpopular" href="/mostPopular">Most Popular</a>
+<a class="random" href="/random">Random</a>
+<a class="submitgif" href="/submitGifToEmail">Send GIF</a>
+</div>
+<div class="singleResult">
+<form th:action="@{/singleResult}" th:object="${randomInput}" method="get">
+    	<input placeholder="Find single GIF" type="text" th:field="${randomInput.inputForm}" />
+        <input type="submit" value="Submit" /> 
+    </form>
+</div>
+<div class="searchGif">
+<form th:action="@{/searchGif}" th:object="${input}" method="get">
+        <input placeholder="Find GIFs" type="text" th:field="${input.inputForm}" />
+        <input type="submit" value="Submit" /> 
+    </form>
+</div>
+</body>
+</html>

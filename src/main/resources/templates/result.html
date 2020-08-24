@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+<title>
+GIPH
+</title>
+<link th:href="@{result.css}" rel="stylesheet"/>
+</head>
+<body>
+<a href="/">Back</a>
+<table class="table" border="1">
+<tbody>
+   <caption>Gifs here</caption>
+ <tr th:each="giph: ${giphs}">
+    <th align="center" width="180" th:text="${giph.title}" />
+        <td align="center" th:text="${giph.url}"/>
+             <td align="center" width="40" th:text="${giph.type}"/>
+        		 <td align="center" width="40" th:text="${giph.rate}" />
+                   	<td> <img width="300" height="200" th:src="${giph.url}"/> </td>
+                </tr>
+                </tbody>
+</table>
+</body>
+</html>

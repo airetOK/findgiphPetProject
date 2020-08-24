@@ -1,0 +1,55 @@
+body{
+	background-color: black;
+}
+
+.topHr{
+	position: relative;
+	border: none; 
+    background-color: white;
+    color: white;
+    height: 4em; 
+}
+
+.logo{
+		position: absolute;
+		top: 6px;
+		left: 6px;
+}
+
+.mostpopular{
+	position: absolute;
+	top: 35%;
+	left: 20%;
+	text-decoration: none;
+	font-family: sans-serif;
+	color: black;
+}
+
+.random{
+	position: absolute;
+		top: 35%;
+		left: 31%;
+		text-decoration: none;
+		font-family: sans-serif;
+		color: black;
+}
+
+.submitgif{
+	position: absolute;
+		top: 35%;
+		left: 40%;
+		text-decoration: none;
+		font-family: sans-serif;
+		color: black;
+}
+
+.singleResult{
+	position:absolute;
+	color:white;
+	top:40%;
+	left: 40%;
+	
+}
+.searchGif{
+	color:white;
+}

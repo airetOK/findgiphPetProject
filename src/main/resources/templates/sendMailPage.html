@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+<title>
+GIPH
+</title>
+<link th:href="@{sendMailPage.css}" rel="stylesheet"/>
+</head>
+<body>
+<div class="topHr">
+<img class="logo" src="GIPHY Logo 300px.png" alt="logo"/>
+<a class="back" href="/">Back</a>
+<a class="mostpopular" href="/mostPopular">Most Popular</a>
+<a class="random" href="/random">Random</a>
+</div>
+<form th:action="@{/sendGif}" th:object="${user}" method="get">
+    	Enter email:  <input type="text" th:field="${user.email}" />
+    	    	Enter subject:  <input type="text" th:field="${user.subject}" />
+    	    	    	Enter GIF link here:  <input type="text" th:field="${user.gifUrl}" />
+    	<input type="submit" value="Send" /> 
+    </form>
+
+</body>
+</html>

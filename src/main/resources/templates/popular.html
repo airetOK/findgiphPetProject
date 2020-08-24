@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+<title>
+GIPH
+</title>
+<link th:href="@{popular.css}" rel="stylesheet"/>
+</head>
+<body>
+<div class="topHr">
+<img class="logo" src="GIPHY Logo 300px.png" alt="logo"/>
+<a class="back" href="/">Back</a>
+<a class="mostpopular" href="/mostPopular">Most Popular</a>
+<a class="random" href="/random">Random</a>
+<a class="submitgif" href="/submitGifToEmail">Send GIF</a>
+</div>
+<table class="table" border="1">
+<tbody>
+   <caption>Gifs here</caption>
+ <tr th:each="giph: ${giphs}">
+    <th align="center" width="180" th:text="${giph.title}" />
+        <td align="center" th:text="${giph.url}" />
+    		<td align="center" width="40" th:text="${giph.type}"/>
+                <td align="center" width="40" th:text="${giph.rate}" />
+                    <td> <img width="300" height="200" th:src="${giph.url}"/> </td>
+                </tr>
+                </tbody>
+</table>
+</body>
+</html>
