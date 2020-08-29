@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+<title>Registration</title>
+</head>
+<body>
+<form th:action="@{/registrationProcess}" th:object="${registration}" method="get">
+<p><input placeholder="Username" type="text" th:field=${registration.username}></p>
+<p><input placeholder="Password" type="password" th:field=${registration.password}></p>
+<p><input type="submit" value="Register"></p>
+</form>
+</body>
+</html>

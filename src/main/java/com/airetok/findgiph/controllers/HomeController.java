@@ -81,5 +81,7 @@ public class HomeController {
 		}
 		return "redirect:/submitGifToEmail";
 	}
+	
+	
 
 }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+<title>
+My Account
+</title>
+<link th:href="@{account.css}" rel="stylesheet">
+</head>
+<body>
+<div class="topHr">
+<img class="logo" src="GIPHY Logo 300px.png" alt="logo"/>
+<a class="back" href="/">Back</a>
+<a class="mostpopular" href="/mostPopular">Most Popular</a>
+<a class="random" href="/random">Random</a>
+<a class="submitgif" href="/submitGifToEmail">Send GIF</a>
+<a class="logOut" href="/logout">Log Out</a>
+</div>
+
+<p th:text ="${userGif.username}">
+<form th:action="@{/addGifToDb}" th:object="${gifAdd}" method="get">
+<p><input th:field="${gifAdd.url}"></p>
+<p><input type="submit" value="Add"></p>
+</form>
+<p> <a class="deleteAll" href="/account/deleteAll">Delete All</a> </p>
+
+<dl  th:each = "url : ${urlsFromDb}">
+<dt><img th:src = "${url.value}" /></dt>
+<dt th:text = "${url.value}"/>
+<dt><a class="deleteUrl" th:href="@{/account/delete/{fUrl}(fUrl=${url.key})}">Delete</a></dt>
+</dl>
+
+</body>
+</html>
