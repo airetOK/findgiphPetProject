@@ -3,11 +3,22 @@
 <head>
 <title>Registration</title>
 </head>
+<link th:href="@{registration.css}" rel="stylesheet"/>
 <body>
+<div class="topHr">
+<img class="logo" src="GIPHY Logo 300px.png" alt="logo"/>
+<a id="back" class="back" href="/login">Back</a>
+<a id="mostpopular" class="mostpopular" href="/mostPopular">Most Popular</a>
+<a id="random" class="random" href="/random">Random</a>
+<a id="submitgif" class="submitgif" href="/submitGifToEmail">Send GIF</a>
+</div>
+<div class="content">
 <form th:action="@{/registrationProcess}" th:object="${registration}" method="get">
-<p><input placeholder="Username" type="text" th:field=${registration.username}></p>
-<p><input placeholder="Password" type="password" th:field=${registration.password}></p>
-<p><input type="submit" value="Register"></p>
+<p><input id="registrateUsername" placeholder="Username" type="text" th:field=*{username}></p>
+<p><input id="registratePassword" placeholder="Password" type="password" th:field=*{password}></p>
+<p><input id="registrateSubmit" type="submit" value="Register">
 </form>
+</div>
+<script src="javascript/home.js"></script>
 </body>
 </html>

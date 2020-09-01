@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+    <head>
+        <title>Login</title>
+    <link th:href="@{login.css}" rel="stylesheet"/>
+</head>
+<body>
+<div class="topHr">
+<img class="logo" src="GIPHY Logo 300px.png" alt="logo"/>
+<a id="back" class="back" href="/">Back</a>
+<a id="mostpopular" class="mostpopular" href="/mostPopular">Most Popular</a>
+<a id="random" class="random" href="/random">Random</a>
+<a id="submitgif" class="submitgif" href="/submitGifToEmail">Send GIF</a>
+<a id="account" class="account" href="/account">My Account</a>
+</div>
+<div class="content">
+        <div class="error" th:if="${param.error}">
+            Invalid username or password
+        </div>
+       <form th:action="@{/login}" method="post">
+          <p><input id="loginUsername" placeholder="Username" type="text" name="username"/></p>
+            <p><input id="loginPassword" placeholder="Password" type="password" name="password"/></p>
+            <input id="loginSubmit" type="submit" value="Sign In"/>
+            <p>Register <a id="registration" class="registration" href="/registration">here</a></p>
+        </form>
+</div>
+        <script src="javascript/home.js"></script>
+    </body>
+</html>

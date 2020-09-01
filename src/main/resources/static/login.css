@@ -56,12 +56,50 @@ body{
 .account{
 	position: absolute;
 		top: 35%;
-		left: 49%;
+		left: 49.5%;
 		text-decoration: none;
 		font-family: sans-serif;
 		color: black;
 }
 .content{
+	position: absolute;
+	top: 35%;
+	left: 42%;
 	margin: auto;
 	text-align: center;
+}
+#loginUsername{
+	outline: 0;
+	border: none;
+	background: transparent;
+	border-bottom: 1px solid #fdfa6c;
+	font-family: sans-serif;
+	color: white;
+}
+#loginPassword{
+	outline: 0;
+	border: none;
+	background: transparent;
+	border-bottom: 1px solid #fc83f5;
+	font-family: sans-serif;
+	color: white;
+}
+#loginSubmit{
+	outline: 0;
+	border: none;
+	background: transparent;
+	color: white;
+	font-family: sans-serif;
+	font-size: x-large;
+	cursor: pointer;
+}
+.registration{
+	text-decoration: none;
+	font-family: sans-serif;
+	color: #6cdd7a;
+}
+.error{
+	font-family: sans-serif;
+	font-size: small;
+	color: #fd4e44;
 }

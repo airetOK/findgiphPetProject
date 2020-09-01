@@ -9,23 +9,21 @@ GIPH
 <body>
 <div class="topHr">
 <img class="logo" src="GIPHY Logo 300px.png" alt="logo"/>
-<a class="back" href="/">Back</a>
-<a class="mostpopular" href="/mostPopular">Most Popular</a>
-<a class="random" href="/random">Random</a>
-<a class="submitgif" href="/submitGifToEmail">Send GIF</a>
-<a class="account" href="/account">My Account</a>
+<a id="back" class="back" href="/">Back</a>
+<a id="mostpopular" class="mostpopular" href="/mostPopular">Most Popular</a>
+<a id="random" class="random" href="/random">Random</a>
+<a id="submitgif" class="submitgif" href="/submitGifToEmail">Send GIF</a>
+<a id="account" class="account" href="/account">My Account</a>
 </div>
 <table class="table" border="1">
 <tbody>
-   <caption>Gifs here</caption>
  <tr th:each="giph: ${giphs}">
     <th align="center" width="180" th:text="${giph.title}" />
         <td align="center" th:text="${giph.url}" />
-    		<td align="center" width="40" th:text="${giph.type}"/>
-                <td align="center" width="40" th:text="${giph.rate}" />
                     <td> <img width="300" height="200" th:src="${giph.url}"/> </td>
                 </tr>
                 </tbody>
 </table>
+<script src="javascript/home.js"></script>
 </body>
 </html>

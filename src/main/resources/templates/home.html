@@ -9,22 +9,26 @@ GIPH
 <body>
 <div class="topHr">
 <img class="logo" src="GIPHY Logo 300px.png" alt="logo"/>
-<a class="mostpopular" href="/mostPopular">Most Popular</a>
-<a class="random" href="/random">Random</a>
-<a class="submitgif" href="/submitGifToEmail">Send GIF</a>
-<a class="account" href="/account">My Account</a>
+<a id="mostpopular" class="mostpopular" href="/mostPopular">Most Popular</a>
+<a id="random" class="random" href="/random">Random</a>
+<a id="submitgif" class="submitgif" href="/submitGifToEmail">Send GIF</a>
+<a id="account" class="account" href="/account">My Account</a>
 </div>
+
 <div class="singleResult">
 <form th:action="@{/singleResult}" th:object="${randomInput}" method="get">
-    	<input placeholder="Find single GIF" type="text" th:field="${randomInput.inputForm}" />
-        <input type="submit" value="Submit" /> 
+    	<input id="singleGif" placeholder="Find single GIF" type="text" th:field="${randomInput.inputForm}" />
+        <input id="singleSubmit" type="submit" value="Search" /> 
     </form>
 </div>
+
 <div class="searchGif">
 <form th:action="@{/searchGif}" th:object="${input}" method="get">
-        <input placeholder="Find GIFs" type="text" th:field="${input.inputForm}" />
-        <input type="submit" value="Submit" /> 
+        <input id="searchGifs" placeholder="Find GIFs" type="text" th:field="${input.inputForm}" />
+        <input id="gifsSubmit" type="submit" value="Search"/> 
     </form>
 </div>
+
+<script src="javascript/home.js"></script>
 </body>
 </html>

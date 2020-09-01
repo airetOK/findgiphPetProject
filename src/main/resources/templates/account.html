@@ -9,25 +9,34 @@ My Account
 <body>
 <div class="topHr">
 <img class="logo" src="GIPHY Logo 300px.png" alt="logo"/>
-<a class="back" href="/">Back</a>
-<a class="mostpopular" href="/mostPopular">Most Popular</a>
-<a class="random" href="/random">Random</a>
-<a class="submitgif" href="/submitGifToEmail">Send GIF</a>
-<a class="logOut" href="/logout">Log Out</a>
+<a id="back" class="back" href="/">Back</a>
+<a id="mostpopular" class="mostpopular" href="/mostPopular">Most Popular</a>
+<a id="random" class="random" href="/random">Random</a>
+<a id="submitgif" class="submitgif" href="/submitGifToEmail">Send GIF</a>
+<a id="logout" class="logOut" href="/logout">Log Out</a>
 </div>
 
-<p th:text ="${userGif.username}">
+<div class="welcome">
+<p>
+Welcome <span th:text ="${userGif.username}"></span>
+</p>
+</div>
+<div class="inputForm">
 <form th:action="@{/addGifToDb}" th:object="${gifAdd}" method="get">
-<p><input th:field="${gifAdd.url}"></p>
-<p><input type="submit" value="Add"></p>
+<p><input id="addGif" placeholder="Gif URL..." th:field="${gifAdd.url}">
+<input id="addSubmit" type="submit" value="Add"></p>
 </form>
-<p> <a class="deleteAll" href="/account/deleteAll">Delete All</a> </p>
+</div>
 
+<a class="deleteAll" href="/account/deleteAll">Delete All</a> 
+
+<div class="content">
 <dl  th:each = "url : ${urlsFromDb}">
 <dt><img th:src = "${url.value}" /></dt>
 <dt th:text = "${url.value}"/>
 <dt><a class="deleteUrl" th:href="@{/account/delete/{fUrl}(fUrl=${url.key})}">Delete</a></dt>
 </dl>
-
+</div>
+<script src="javascript/home.js"></script>
 </body>
 </html>

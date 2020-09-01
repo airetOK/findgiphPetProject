@@ -74,3 +74,38 @@ text-decoration: none;
 	font-family: sans-serif;
 	color: white;	
 }
+
+.welcome{
+	text-align: left;
+	font-family: sans-serif;
+	color: white;
+	font-size: large;
+}
+.inputForm{
+	text-align: left;
+	font-family: sans-serif;
+	color: white;
+	
+}
+#addGif{
+	outline: 0;
+	border: none;
+	width: 26em;
+	background: transparent;
+	border-bottom: 1px solid #80ff80;
+	font-family: sans-serif;
+	color: white;
+}
+#addSubmit{
+	outline: 0;
+	border: none;
+	background: transparent;
+	color: white;
+	font-family: sans-serif;
+	font-size:large;
+	cursor: pointer;
+}
+.content{
+	margin: auto;
+	text-align: left;
+}

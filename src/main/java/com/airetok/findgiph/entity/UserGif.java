@@ -6,8 +6,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.airetok.findgiph.validation.UniqueValue;
+
 @Entity
 @Table(name = "user_gif")
+@UniqueValue
 public class UserGif {
 	
 	public UserGif() {

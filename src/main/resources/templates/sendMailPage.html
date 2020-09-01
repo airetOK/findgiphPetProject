@@ -9,17 +9,19 @@ GIPH
 <body>
 <div class="topHr">
 <img class="logo" src="GIPHY Logo 300px.png" alt="logo"/>
-<a class="back" href="/">Back</a>
-<a class="mostpopular" href="/mostPopular">Most Popular</a>
-<a class="random" href="/random">Random</a>
-<a class="account" href="/account">My Account</a>
+<a id="back" class="back" href="/">Back</a>
+<a id="mostpopular" class="mostpopular" href="/mostPopular">Most Popular</a>
+<a id="random" class="random" href="/random">Random</a>
+<a id="account" class="account" href="/account">My Account</a>
 </div>
+<div class="sendGifToMail">
 <form th:action="@{/sendGif}" th:object="${user}" method="get">
-    	Enter email:  <input type="text" th:field="${user.email}" />
-    	    	Enter subject:  <input type="text" th:field="${user.subject}" />
-    	    	    	Enter GIF link here:  <input type="text" th:field="${user.gifUrl}" />
-    	<input type="submit" value="Send" /> 
-    </form>
-
+      <p><input id="enterEmail" type="text" placeholder="Enter email..." th:field="${user.email}" /></p>
+    	    	  <p><input id="enterSubject" type="text" placeholder="Enter subject..." th:field="${user.subject}" /></p>
+    	    	    	  <p><input id="enterGif" type="text" placeholder="Enter GIF link..." th:field="${user.gifUrl}" /></p>
+    	<input id="sendSubmit" type="submit" value="Send" /> 
+</form>
+</div>
+<script src="javascript/home.js"></script>
 </body>
 </html>

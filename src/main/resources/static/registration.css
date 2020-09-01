@@ -53,15 +53,35 @@ body{
 		font-family: sans-serif;
 		color: black;
 }
-.account{
-	position: absolute;
-		top: 35%;
-		left: 49%;
-		text-decoration: none;
-		font-family: sans-serif;
-		color: black;
-}
 .content{
+	position: absolute;
+	top:30%;
+	left:44%;
 	margin: auto;
 	text-align: center;
+}
+#registrateUsername{
+	outline: 0;
+	border: none;
+	background: transparent;
+	border-bottom: 1px solid #80ff80;
+	font-family: sans-serif;
+	color: white;
+}
+#registratePassword{
+	outline: 0;
+	border: none;
+	background: transparent;
+	border-bottom: 1px solid #80ff80;
+	font-family: sans-serif;
+	color: white;
+}
+#registrateSubmit{
+	outline: 0;
+	border: none;
+	background: transparent;
+	color: white;
+	font-family: sans-serif;
+	font-size:large;
+	cursor: pointer;
 }

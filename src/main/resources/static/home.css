@@ -57,8 +57,47 @@ body{
 	color:white;
 	top:40%;
 	left: 40%;
-	
+}
+
+#singleGif{
+	outline: 0;
+	border: none;
+	background: transparent;
+	border-bottom: 1px solid #1890ff;
+	font-family: sans-serif;
+	color: white;
+}
+#singleSubmit{
+	outline: 0;
+	border: none;
+	background: transparent;
+	color: white;
+	font-family: sans-serif;
+	font-size: medium;
+	cursor: pointer;
 }
 .searchGif{
+	position:absolute;
 	color:white;
+	top:50%;
+	left: 40%;
+	color:white;
+}
+
+#searchGifs{
+	outline: 0;
+	border: none;
+	background: transparent;
+	border-bottom: 1px solid #fc3227;
+	font-family: sans-serif;
+	color: white;
+}
+#gifsSubmit{
+	outline: 0;
+	border: none;
+	background: transparent;
+	color: white;
+	font-family: sans-serif;
+	font-size: medium;
+	cursor: pointer;
 }
