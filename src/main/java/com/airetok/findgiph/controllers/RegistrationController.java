@@ -1,5 +1,7 @@
 package com.airetok.findgiph.controllers;
 import java.security.Principal;
+
+
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -87,6 +89,8 @@ public class RegistrationController {
 		giphUserRepository.save(accountService.deleteAllGifsFromUser(userGif));
 		return "redirect:/account";
 	}
+	
+	
 	
 	
 

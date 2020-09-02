@@ -76,6 +76,38 @@ body{
 	font-family: sans-serif;
 	color: white;
 }
+#registrateFirstName{
+	outline: 0;
+	border: none;
+	background: transparent;
+	border-bottom: 1px solid #80ff80;
+	font-family: sans-serif;
+	color: white;
+}
+#registrateLastName{
+	outline: 0;
+	border: none;
+	background: transparent;
+	border-bottom: 1px solid #80ff80;
+	font-family: sans-serif;
+	color: white;
+}
+#registrateEmail{
+	outline: 0;
+	border: none;
+	background: transparent;
+	border-bottom: 1px solid #80ff80;
+	font-family: sans-serif;
+	color: white;
+}
+#registrateDateOfBirth{
+	outline: 0;
+	border: none;
+	background: transparent;
+	border-bottom: 1px solid #80ff80;
+	font-family: sans-serif;
+	color: white;
+}
 #registrateSubmit{
 	outline: 0;
 	border: none;

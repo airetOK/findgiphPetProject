@@ -16,6 +16,12 @@
 <form th:action="@{/registrationProcess}" th:object="${registration}" method="get">
 <p><input id="registrateUsername" placeholder="Username" type="text" th:field=*{username}></p>
 <p><input id="registratePassword" placeholder="Password" type="password" th:field=*{password}></p>
+<p><input id="registrateFirstName" placeholder="First Name" type="text" th:field=*{firstName}></p>
+<p><input id="registrateLastName" placeholder="Last Name" type="text" th:field=*{lastName}></p>
+<p><input id="registrateEmail" placeholder="Email" type="text" th:field=*{email}></p>
+<p><input id="registrateDateOfBirth" placeholder="yyyy-mm-dd" type="text" th:field=*{dateOfBirth}></p>
+
+
 <p><input id="registrateSubmit" type="submit" value="Register">
 </form>
 </div>
