@@ -53,7 +53,12 @@ public class HomeController {
 	@RequestMapping(value = "/singleResult")
 	public String singleResult(@ModelAttribute ("randomInput") InputForm inputForm,Model model) {
 		String url = "https://api.giphy.com/v1/gifs/random?api_key=TEHcJcE3JMXy2g3gnDfQB0SviJFv5IV2&tag="+inputForm.getInputForm()+"&rating=g";
+		try {
 		model.addAttribute("gif",getGiphFromApi.getRandomGiph(url));
+		} catch(Exception e) {
+			model.addAttribute("gif",new Giph("", "", null, ""));
+			e.getMessage();
+		}
 		return "random";
 	}
 	

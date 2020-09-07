@@ -59,6 +59,7 @@ body{
 	top: 30%;
 	left: 44%;
 	text-align: center;
+	
 }
 #enterEmail{
 	outline: 0;
@@ -66,6 +67,7 @@ body{
 	background: transparent;
 	border-bottom: 1px solid #fc3227;
 	font-family: sans-serif;
+	color: white;
 }
 #enterSubject{
 	outline: 0;
@@ -73,6 +75,8 @@ body{
 	background: transparent;
 	border-bottom: 1px solid #1890ff;
 	font-family: sans-serif;
+	color: white;
+	
 }
 #enterGif{
 	outline: 0;
@@ -80,6 +84,8 @@ body{
 	background: transparent;
 	border-bottom: 1px solid #80ff80;
 	font-family: sans-serif;
+	color: white;
+	
 }
 #sendSubmit{
 	outline: 0;
