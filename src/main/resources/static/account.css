@@ -53,6 +53,15 @@ body{
 		color: black;
 }
 
+.contactUs{
+		position: absolute;
+		top: 35%;
+		left: 49%;
+		text-decoration: none;
+		font-family: sans-serif;
+		color: black;
+}
+
 .logOut{
 	position: absolute;
 		top: 35%;

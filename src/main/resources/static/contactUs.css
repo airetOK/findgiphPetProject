@@ -45,10 +45,26 @@ body{
 		color: black;
 }
 
+.account{
+	position: absolute;
+		top: 35%;
+		left: 50%;
+		text-decoration: none;
+		font-family: sans-serif;
+		color: black;
+}
+
+.sendGifToMail{
+	position: absolute;
+	top: 30%;
+	left: 44%;
+	text-align: center;
+	
+}
 .submitgif{
 	position: absolute;
 		top: 35%;
-		left: 41.5%;
+		left: 42%;
 		text-decoration: none;
 		font-family: sans-serif;
 		color: black;
@@ -56,75 +72,35 @@ body{
 .contactUs{
 		position: absolute;
 		top: 35%;
-		left: 49%;
+		left: 51%;
 		text-decoration: none;
 		font-family: sans-serif;
 		color: black;
 }
-.content{
-	position: absolute;
-	top:30%;
-	left:44%;
-	margin: auto;
-	text-align: center;
+#enterEmail{
+	outline: 0;
+	border: none;
+	background: transparent;
+	border-bottom: 1px solid #1890ff;
+	font-family: sans-serif;
 	color: white;
+	
 }
-#registrateUsername{
+#enterText{
 	outline: 0;
 	border: none;
 	background: transparent;
 	border-bottom: 1px solid #80ff80;
 	font-family: sans-serif;
 	color: white;
+	
 }
-#registratePassword{
-	outline: 0;
-	border: none;
-	background: transparent;
-	border-bottom: 1px solid #80ff80;
-	font-family: sans-serif;
-	color: white;
-}
-#registrateFirstName{
-	outline: 0;
-	border: none;
-	background: transparent;
-	border-bottom: 1px solid #80ff80;
-	font-family: sans-serif;
-	color: white;
-}
-#registrateLastName{
-	outline: 0;
-	border: none;
-	background: transparent;
-	border-bottom: 1px solid #80ff80;
-	font-family: sans-serif;
-	color: white;
-}
-#registrateEmail{
-	outline: 0;
-	border: none;
-	background: transparent;
-	border-bottom: 1px solid #80ff80;
-	font-family: sans-serif;
-	color: white;
-}
-#registrateDateOfBirth{
-	outline: 0;
-	border: none;
-	background: transparent;
-	border-bottom: 1px solid #80ff80;
-	font-family: sans-serif;
-	color: white;
-}
-#registrateSubmit{
+#sendSubmit{
 	outline: 0;
 	border: none;
 	background: transparent;
 	color: white;
 	font-family: sans-serif;
-	font-size:large;
+	font-size: large;
 	cursor: pointer;
 }
-
-

@@ -61,6 +61,14 @@ body{
 		font-family: sans-serif;
 		color: black;
 }
+.contactUs{
+		position: absolute;
+		top: 35%;
+		left: 59%;
+		text-decoration: none;
+		font-family: sans-serif;
+		color: black;
+}
 .content{
 	position: absolute;
 	top: 35%;

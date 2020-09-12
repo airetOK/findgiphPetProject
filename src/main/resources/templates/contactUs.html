@@ -2,9 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
 <head>
 <title>
-Most Popular
+Contact Us
 </title>
-<link th:href="@{popular.css}" rel="stylesheet"/>
+<link href="contactUs.css" rel="stylesheet"/>
 </head>
 <body>
 <div class="topHr">
@@ -14,18 +14,14 @@ Most Popular
 <a id="random" class="random" href="/random">Random</a>
 <a id="submitgif" class="submitgif" href="/submitGifToEmail">Send GIF</a>
 <a id="account" class="account" href="/account">My Account</a>
-<a id="contactUs" class="contactUs" href="/contactUs">Contact Us</a>
 </div>
-<table class="table" border="1">
-<tbody>
- <tr th:each="giph: ${giphs}">
-    <th align="center" width="180" th:text="${giph.title}" />
-        <td align="center" th:text="${giph.url}" />
-                    <td> <img width="300" height="200" th:src="${giph.url}"/> </td>
-                </tr>
-                </tbody>
-</table>
+<div class="sendGifToMail">
+<form th:action="@{/sendContactUsMsg}" th:object="${user}" method="get">
+      <p><input id="enterEmail" type="text" placeholder="Enter your email..." th:field="${user.email}" /></p>
+    	    	    	  <p><textarea id="enterText"  placeholder="Your text..." th:field="${user.text}"></textarea></p>
+    	<input id="sendSubmit" type="submit" value="Send" /> 
+</form>
+</div>
 <script src="javascript/home.js"></script>
-<script src="javascript/home1.js"></script>
-</body>
+<script src="javascript/home1.js"></script></body>
 </html>

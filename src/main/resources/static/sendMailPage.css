@@ -61,6 +61,14 @@ body{
 	text-align: center;
 	
 }
+.contactUs{
+		position: absolute;
+		top: 35%;
+		left: 51%;
+		text-decoration: none;
+		font-family: sans-serif;
+		color: black;
+}
 #enterEmail{
 	outline: 0;
 	border: none;

@@ -84,6 +84,15 @@ body{
 	color:white;
 }
 
+.contactUs{
+		position: absolute;
+		top: 35%;
+		left: 61%;
+		text-decoration: none;
+		font-family: sans-serif;
+		color: black;
+}
+
 #searchGifs{
 	outline: 0;
 	border: none;

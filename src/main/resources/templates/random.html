@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
 <head>
 <title>
-GIPH
+Random
 </title>
 <link th:href="@{random.css}" rel="stylesheet"/>
 </head>
@@ -14,6 +14,8 @@ GIPH
 <a id="random" class="random" href="/random">Random</a>
 <a id="submitgif" class="submitgif" href="/submitGifToEmail">Send GIF</a>
 <a id="account" class="account" href="/account">My Account</a>
+<a id="contactUs" class="contactUs" href="/contactUs">Contact Us</a>
+
 </div>
 <h2  th:if="${gif.url == null}">No results</h2>
 
@@ -22,5 +24,5 @@ GIPH
 <p th:text="${gif.url}"/>
 </div>
 <script src="javascript/home.js"></script>
-</body>
+<script src="javascript/home1.js"></script></body>
 </html>

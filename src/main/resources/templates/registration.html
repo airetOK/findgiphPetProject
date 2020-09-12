@@ -11,7 +11,9 @@
 <a id="mostpopular" class="mostpopular" href="/mostPopular">Most Popular</a>
 <a id="random" class="random" href="/random">Random</a>
 <a id="submitgif" class="submitgif" href="/submitGifToEmail">Send GIF</a>
+<a id="contactUs" class="contactUs" href="/contactUs">Contact Us</a>
 </div>
+
 <div class="content">
 <form th:action="@{/registrationProcess}" th:object="${registration}" method="get">
 <p><input id="registrateUsername" placeholder="Username" type="text" th:field=*{username}></p>
@@ -20,11 +22,14 @@
 <p><input id="registrateLastName" placeholder="Last Name" type="text" th:field=*{lastName}></p>
 <p><input id="registrateEmail" placeholder="Email" type="text" th:field=*{email}></p>
 <p><input id="registrateDateOfBirth" placeholder="yyyy-mm-dd" type="text" th:field=*{dateOfBirth}></p>
-
-
 <p><input id="registrateSubmit" type="submit" value="Register">
 </form>
 </div>
+
+
+
 <script src="javascript/home.js"></script>
+<script src="javascript/home1.js"></script>
+
 </body>
 </html>

@@ -26,6 +26,17 @@ public class GifMailService {
 		javaMailSender.send(mail);
 	}
 	
+	public void sendContactUsMessage(User user) {
+		SimpleMailMessage mail = new SimpleMailMessage();
+		mail.setSubject(user.getEmail());
+		mail.setTo("findgiph@gmail.com");
+		mail.setText(user.getText());
+		javaMailSender.send(mail);
+	}
+	
+	
+	
+	
 	
 	
 }

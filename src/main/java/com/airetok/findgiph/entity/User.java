@@ -5,12 +5,25 @@ public class User {
 	private String gifUrl;
 	private String subject;
 	private String email;
+	private String text;
 	
 	public User() {
 		
 	}
 
 	
+
+	public String getText() {
+		return text;
+	}
+
+
+
+	public void setText(String text) {
+		this.text = text;
+	}
+
+
 
 	public String getGifUrl() {
 		return gifUrl;

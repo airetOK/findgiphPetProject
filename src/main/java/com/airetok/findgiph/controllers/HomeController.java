@@ -85,6 +85,23 @@ public class HomeController {
 		return "redirect:/submitGifToEmail";
 	}
 	
+	@RequestMapping("/contactUs")
+	public String contactUs(Model model) {
+		model.addAttribute("user",new User());
+		return "contactUs";
+	}
+	
+	@RequestMapping("/sendContactUsMsg")
+	public String sendContactUs(@ModelAttribute ("user") User user) {
+		try {
+			gifMailService.sendContactUsMessage(user);
+		} catch (MailException e) {
+			e.printStackTrace();
+		}
+		return "redirect:/contactUs";
+	}
+	
+	
 	
 	
 

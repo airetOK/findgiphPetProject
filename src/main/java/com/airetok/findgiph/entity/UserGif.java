@@ -1,14 +1,15 @@
 package com.airetok.findgiph.entity;
 
 import java.sql.Date;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import com.airetok.findgiph.validation.UniqueValue;
 
 @Entity
@@ -23,17 +24,36 @@ public class UserGif {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	
+	@NotNull
+	@Size(min = 6)
 	private String username;
+	
 	private String urls;
+	
+	@NotNull
+	@Size(min = 6)
 	private String password;
+	
 	private String authority;
+	
 	private String enabled;
+	
 	@Column(name = "first_name")
+	@NotNull
 	private String firstName;
+	
 	@Column(name = "last_name")
+	@NotNull
 	private String lastName;
+	
+	
+	@NotNull
+	@Email
 	private String email;
+	
 	@Column(name = "date_of_birth")
+	@NotNull
 	private Date dateOfBirth;
 	
 	public String getFirstName() {

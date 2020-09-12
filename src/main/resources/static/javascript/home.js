@@ -6,10 +6,8 @@ document.querySelector('#submitgif').addEventListener('mouseenter',enterSubmitGi
 document.querySelector('#submitgif').addEventListener('mouseleave',leaveSubmitGif);
 document.querySelector('#account').addEventListener('mouseenter',enterAccount);
 document.querySelector('#account').addEventListener('mouseleave',leaveAccount);
-document.querySelector('#back').addEventListener('mouseenter',enterBack);
-document.querySelector('#back').addEventListener('mouseleave',leaveBack);
-document.querySelector('#registration').addEventListener('mouseenter',enterRegistration);
-document.querySelector('#registration').addEventListener('mouseleave',leaveRegistration);
+
+
  function enterMostPopular(){
  	document.getElementById('mostpopular').style.fontSize = '18px';
  }
@@ -34,15 +32,5 @@ document.querySelector('#registration').addEventListener('mouseleave',leaveRegis
 			 function leaveAccount(){
 				 document.getElementById('account').style.fontSize = '16px';
 			 }
-			 function enterBack(){
-				 	document.getElementById('back').style.fontSize = '18px';
-				 }
-				 function leaveBack(){
-					 document.getElementById('back').style.fontSize = '16px';
-				 }
-				 function enterRegistration(){
-					 	document.getElementById('registration').style.fontSize = '18px';
-					 }
-					 function leaveRegistration(){
-						 document.getElementById('registration').style.fontSize = '16px';
-					 }
+				 
+				
